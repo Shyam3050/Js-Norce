@@ -1,0 +1,154 @@
+                                    OOPS
+                                  ________
+                                  
+  OOPS - Object oriented programming is a way of creating different objects from a common object, The common object is usually called blueprint. while creating objets are called instances.                                           
+  Note: Each instances has properties that are not shared with other instances.
+  
+  Ex: 
+  
+ suppose we have like
+ 
+   user{
+    user
+    password
+    email
+    login() {
+      // some code
+    }
+   }  // this is the blueprint
+   
+   child{
+    user: 'jonas',
+    password: 1237232,
+    emil: 'nioj@gmail.com',
+    login(){
+    // some code
+    }
+   } // these are instances 
+   
+
+  4 - four pillar of javascript
+  
+  1- Abstraction
+  2- encapsulation
+  3- inheritance
+  4- polymorphism
+  
+  1- ignoring and hiding details that don't matter
+  
+   ex:    
+  user{
+    user
+    password
+    email
+    login() {
+      // some code
+    }
+    password(){}
+    color(){}
+    weight(){}
+   }
+   
+   child{
+   user,
+   password
+   }  // we don't need unless data
+  
+ 2- keeping properties & methods private inside the class so they are not accesible from outside the class
+ 
+ Ex:-
+   ex:    
+  user{
+    user
+    password
+    private  email
+     private login() {
+      // some code
+    }
+    password(){}
+    color(){}
+    weight(){}
+   }
+   
+   child{
+   user,
+   password
+   }    
+
+ 3- making all propertis & methods of a certain class avilable to a child class
+   ex:    
+  user{
+    user
+    password
+   
+   }
+   
+   child{
+   user,
+   password,
+   newlyaded,
+   newlyadded2,
+   newlyadded3,
+   }  // here we can inherit all the data form parent if we want any data to add then we add.
+
+
+
+ 4- polymorpisim --- A Child can overwrite a method it inherited from a parent.
+ 
+  parent {
+   x,
+   y(m,n) {
+  // y code 
+  }
+  } 
+  
+  child-1{
+  x,
+  y(M) {
+  } // HERE y function overwrite the data
+  }
+  
+   child-1{
+  x,
+  y(M,N,K) {
+  } // HERE y function overwrite the data
+  }
+  
+  
+    
+              
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   
