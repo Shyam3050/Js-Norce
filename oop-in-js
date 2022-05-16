@@ -1,9 +1,0 @@
-OOP in javascript
-
-In javasscript we have prototypes 
-all objects in js linked to a prototype object
-
-Prototype Inheritance: 
-
-the prototype contains methods and variable that are accesible to all objects linked to that prototype.
-

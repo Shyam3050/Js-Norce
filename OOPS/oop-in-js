@@ -1,0 +1,27 @@
+OOP in javascript
+ 
+Note: javascript have different than classical Opps  
+ 
+In javasscript we have prototypes 
+all objects in js linked to a prototype object
+
+Prototype Inheritance: 
+the prototype contains methods and variable that are accesible to all objects linked to that prototype.
+
+  HOW DO WE ACTUALLY CREATE PROTOTYYPES? AND HOW WE LINK TO PROTOTUPES? HOW CAN WE CREATE NEW OBJECTS WITH OUT HAVING CLASSES?
+  
+   1- CONSTRUCTOR FUNCTION 
+     Technique to create objects from a function
+     this is how built-in objects like Arrays,Maps, Sets are actually implemented.
+   
+   2- ES6 CLASSES
+     Modern alternative to constuctor function
+     Es6 not behave like classes in classical oops
+   
+   3- Objects.Create() 
+     this is the easiest one to linking an objects to a prototype object.
+     
+ 
+  4 pillar of javascript
+   ABSTRACTION, ENCAPSULATION, INHERITANCE, POLYMORPHISIM    
+     
