@@ -15,7 +15,7 @@ let name2 = {
 };
 
 // call()
-// using call method we can borrow function other object and use it other object
+// using call method we can borrow function from other object and use it other object
 // first argument of call method is reference to this variable.
 // remaings are normal arguments of function
 printFullName.call(name2, "india");
@@ -32,4 +32,3 @@ printMyName();
 //  call() - which is used to call/invoke a function directly by passing in the reference which points to this inside of the function
 // apply() - it's also same but isted of passing individual it passes array list
 // bind() - bind method doesn't invoked directly .its gives copy of same method which invoked later.
-
