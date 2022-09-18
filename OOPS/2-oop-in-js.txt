@@ -4,9 +4,25 @@ Note: javascript have different than classical Opps
  
 In javasscript we have prototypes 
 all objects in js linked to a prototype object
+prototype: 
+            prototype is a special object which is present on classes (classical classes/ blue print).
+ When we create objects from those classes prototype property added as a property of that created object.
+(this is called prototype inheritances).
 
 Prototype Inheritance: 
 the prototype contains methods and variable that are accesible to all objects linked to that prototype.
+
+All the methods are copied from class to all instances.
+
+EXAMPLE:  
+             Const num = [1,2,3];
+             num.map(v => v * 2);
+            
+ like in mdn web Array.prototype.map();
+Basically Array Is Constructor function which have Prototype object
+When we create array then we access those prototype methods.
+ 
+
 
   HOW DO WE ACTUALLY CREATE PROTOTYYPES? AND HOW WE LINK TO PROTOTUPES? HOW CAN WE CREATE NEW OBJECTS WITH OUT HAVING CLASSES?
   

@@ -1,5 +1,6 @@
 "use strict";
 // Constractor function
+// constractor function is a blue print we can create instances using this blue print.
 // it's like normal function but here first letter wil be capital.
 // for calling this use new keyword.
 // finaly constructor function returns the object
