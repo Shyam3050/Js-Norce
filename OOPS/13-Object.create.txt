@@ -1,0 +1,28 @@
+The new way of implementing the objects
+// It creates brand new object.
+object.create();
+it have two parameter only like first one for prototype next one for property for object
+
+
+const Prototype = {
+    calc: function(){
+        console.log("this is calc");
+    }
+}
+const obj = Object.create(Prototype);
+// obj = {}
+like here obj.__proto__ === prototype // true
+for adding property we do like obj.name = "shyam" like this.
+
+/////for auto adding property we use like 
+const Prototype = {
+    calc: function(){
+        console.log("this is calc");
+    }
+    init: function(firstName, birthYear){
+       this.firstName = firstName;
+       this.birthYear = birthYear
+    }
+}
+const obj = Object.create(Prototype);
+obj.init("shyam", 2003)

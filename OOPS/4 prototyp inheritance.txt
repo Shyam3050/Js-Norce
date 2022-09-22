@@ -1,0 +1,33 @@
+// const Person = function(firstName){
+//     this.firstName = firstName
+// }
+// const jonas = new Person("shyam");
+// // prototype inheritance
+// Javascript is a prototype based language so whenever we create a function js engine automattically added a prototype object.
+
+// so Every function is also a object so it also have prototype.
+// for Object we see like this [[prototype]] which is object we access those property and methods using __proto__
+
+// like in above example Person.prototype is not the prototype of Person.
+// because Person.prototype is different Person.prototype.__proto__ is Equal to Object.prototype
+
+// //  we can call any function with new opreator
+// 1 a new empty object is created
+// 2 this keyword in constructor function referenced to newly created object
+// 3 new __proto__ property is created which is linked to constructor function prototype property
+// 4 then constructor function is return the object.Equal
+
+// // Every object in js have prototype
+// // {} === new Object();
+//  when we create object using object literal then behind scene built in Object constructor function called. __proto__ property is added newly created object.
+
+//// prototype chain
+// when we we look ceratin property or method in object it it can't there then we look prototype property which is inherite from constructor function where object was created, there also we can't find then it looks their prototype last top one was null .
+//  this Series of links betwen object prototype called prototype chain.
+
+//////////////////////////////
+//// we know that every Funtion in js is object
+// when we create constructor function .prototype object is created or constructor property is reference back to object
+
+// like in function constructor take an example Person
+// Person.prototype which is object so it self have prototype we define {} "{}" which object literal so object.prototype is inheritate

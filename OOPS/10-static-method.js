@@ -1,3 +1,4 @@
+// like Math.random() are static methods like random() is only for Math constructor function
 // static for class
 class PersonCl {
   constructor(fullName, birthYear) {
@@ -29,4 +30,3 @@ Person.hey = function () {
   console.log("this from constructor function hey");
 };
 Person.hey();
-

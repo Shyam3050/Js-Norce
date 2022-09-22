@@ -1,0 +1,57 @@
+// private method
+// 1) public field
+// 2) private field
+// 3) public method
+// 4) private method
+// for public field and public methods are normal way of writting property and methods which are publically accessible.
+// when it comes to private which only accessible inside the class for implementing this we use # before property and methods.
+
+// we need to implement outside of constructor function for public and private fields or methods also.
+
+///////////////
+class Account {
+  // public fields
+  // locale = navigation.language.
+  /////////////
+  // private fields
+  //  #movements = [];
+  //  #pin = 1111;
+
+  constructor(owner, currency, pin) {
+    this.owner = owner;
+    this.currency = currency;
+    // protected property
+    this.#pin = pin;
+    //this._movements = [];
+    this.locale = navigator.language;
+    console.log(`Thanks for opening an account, ${this.owner}`);
+  }
+  // public methods
+  getMovement() {
+    return this._movements;
+  }
+  deposit(val) {
+    this._movements.push(val);
+  }
+  withdraw(val) {
+    this.deposit(-val);
+  }
+  // PrivateMethods
+  #approveLoan(val) {
+    return true;
+  }
+  requestLoan(val) {
+    if (this.approveLoan(val)) {
+      this.deposit(val);
+      console.log("Loan approved Amount is added to your Account");
+    }
+  }
+}
+const acc1 = new Account("jonas", 0, 1111);
+// acc1._movements.push(150)
+// acc1._movements.push(-220)
+
+acc1.deposit(140);
+acc1.withdraw(450);
+acc1.requestLoan(1000);
+console.log(acc1);

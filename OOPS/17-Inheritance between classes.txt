@@ -1,0 +1,34 @@
+class PersonCl{
+  constructor(fullName,birthYear){
+    this.fullName = fullName;
+    this.birthYear = birthYear;
+  }
+
+  // Instance methods
+  calcAge(){
+    console.log(2022 - this.birthYear);
+  }
+  greet(){
+    console.log(`Hey ${this.fullName}`);
+  }
+  get age(){
+    return 2037 - this.birthYear;
+  }
+  static hey(){
+    console.log('Hey there');
+  }
+}
+// Inheritance between Classes to Classes in Es6 Classes
+// we need only extends and super()
+class StudentCl extends PersonCl{
+constructor(fullName,birthYear,course){
+  // Always need to happen first
+  super(fullName,birthYear);
+  this.course = course;
+}
+introduce(){
+  console.log('from StudentCl');
+}
+}
+
+const martha = new StudentCl("marths jones", 2012, "computer science")

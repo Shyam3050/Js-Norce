@@ -1,0 +1,48 @@
+// Inheritance betwen "Classes" : costructor function
+
+const Person = function (firstName, birthYear) {
+  this.firstName = firstName;
+  this.birthYear = birthYear;
+};
+Person.prototype.calcAge = function () {
+  console.log(2037 - this.birthYear);
+};
+
+const Student = function (firstName, birthYear, course) {
+  Person.call(this, firstName, birthYear);
+  this.course = course;
+};
+
+// Student.prototype = Object.create(Person.prototype,);
+// for Object.create(prototype) it's creates a new object so property's are copied.
+
+//////////
+Student.prototype = Person.prototype;
+// here Student and Student instances prototypes are pointing to Person.prototype.
+
+// it copy the Person.prototype Reference rather then copying the values
+////////////
+
+Student.prototype.introduce = function () {
+  console.log(`my self ${this.firstName} studing in ${this.course}`);
+};
+const mike = new Student("mike", 2020, "computer Science");
+mike.calcAge();
+mike.introduce();
+
+// we Need to fix this so
+// Student.prototype.constructor = Student;
+
+// console.log(Student.prototype.constructor); // person
+
+// x-----> y -------> z
+// z instanceof y //true
+// y instanceof x //true
+// here these are linked to each other.
+// console.log(mike instanceof Person);
+// console.log(mike instanceof Student);
+// console.log(mike instanceof Object);
+
+// //  it's not work
+// console.log(Object instanceof mike);
+// //script.js:43 Uncaught TypeError: Right-hand side of 'instanceof' is not callable

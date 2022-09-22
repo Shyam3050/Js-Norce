@@ -4,7 +4,7 @@
 // const PersonCl = class {
 
 // }
-// for some reason jonas prefer function decleration
+// for some reason jonas prefer class decleration
 class PersonCl {
   constructor(firstName, birthYear) {
     this.firstName = firstName;
@@ -20,11 +20,12 @@ console.log(jessica);
 jessica.calcAGe();
 console.log(PersonCl.prototype);
 
-PersonCl.prototype.geek = function () {
-  console.log(`Hey ${this.firstName}`);
-};
+// PersonCl.prototype.geek = function () {
+//   console.log(`Hey ${this.firstName}`);
+// };
 
-jessica.geek();
+// jessica.geek();
+// this is also work just fine
 
 // Note:
 //  classes are not hoisted in js even class decleartion
