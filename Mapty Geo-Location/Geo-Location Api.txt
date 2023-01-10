@@ -1,0 +1,19 @@
+if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(position => {
+        const {latitude} = position.coords;
+        const {longitude} = position.coords;
+        console.log(`https://www.google.co.in/maps/@${latitude},${longitude},`);
+    }, ()=> console.log("Error"))
+}
+
+// GeoLocation is an api which provides the browser
+
+getCurrentPosition(parameter1, parameter2);
+
+parameter1 -> it accept one call-back function by default.
+
+like function parameter1(position){
+
+// position default parameter return Geolocationposition object which have chords etc
+
+parameter2 is for Error handling.

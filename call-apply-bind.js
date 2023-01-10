@@ -1,13 +1,13 @@
 "use strict";
 
-let name = {
+let named = {
   firstName: "shyam",
   lastName: "sundar",
 };
 let printFullName = function (place) {
   console.log(this.firstName + " " + this.lastName + " " + place);
 };
-printFullName.call(name, "uk");
+printFullName.call(named, "uk");
 
 let name2 = {
   firstName: "sachin",
