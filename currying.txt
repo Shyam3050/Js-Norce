@@ -1,0 +1,137 @@
+// infinite currying in js
+// sum(2)(4)(5)()()()
+
+// function sum(a) {
+//   return function (b) {
+//     if (b) return sum(a + b);
+//     return a;
+//   };
+// }
+// console.log(sum(2)(4)(5)());
+
+// infinite currying implemented using latest version of js
+// const add = a => b => b ? add(a + b) : a;
+// console.log(add(2)(5)(9)());
+
+// curring
+// curring is a function it takes one argument at a time and returns a new function expecting the next argument
+// we can implement curring useing bind and clousers
+
+// curring implementation using bind
+// const multiply = (a, b) => {
+//    console.log(a * b);
+// }
+
+// const multipleFour = multiply.bind(this, 4);
+// multipleFour(3)
+
+// const multipletwo = multiply.bind(this, 2)
+// multipletwo(9)
+
+// curring implementaiion using clousers
+
+// const add = (a) =>{
+//   return b => console.log(a + b);
+// }
+// add(2)(4)
+
+// curring practice example
+
+// const user = {
+//   name: "shyam",
+//   age: 23
+// }
+
+// function userInfo (userObj){
+//   return (userInfo) => userObj[userInfo]
+// }
+// const res = userInfo(user);
+// console.log(res("name"));
+
+//Roadside coader currying
+
+// fn(a,b) normal function
+// fn(a)(b) a function which is curryed
+
+// why is used currying
+// * to avoid passing the same variable again & again
+// * to create higherorder function
+
+// sum(2)(4)(6)
+
+// function sum (a){
+//     return function (b){
+//         if(b) return sum(a + b)
+//        return a
+//     }
+// }
+// console.log(sum(2)(4)(6)());
+
+// reusing variable for logic
+
+// function evaluate(operation){
+//     return function (a){
+//         return function (b){
+//             if(operation === "sum") return a + b;
+//             else if(operation === "minus") return a - b;
+//         }
+//     }
+// }
+
+// const sum = evaluate("sum");
+// console.log(sum(2)(4));
+// console.log(sum(4)(8));
+
+// partial application
+// it transform a function into another function  with small arity
+// arity: no of argument a function receives
+
+// function sum (a){
+//     return function (b,c){
+//         return a + b + c;
+//     }
+// }
+// sum(6)(2,3);
+
+// currying: Currying transforms a function that accepts multiple arguments “all at once” into a series of function calls, each of which involves only one argument at a time.
+
+// Manuplating DOM using currying
+
+// function updateElementText(id) {
+//   return function (content) {
+//     document.querySelector("#" + id).textContent = content;
+//   };
+// }
+
+// const updateHeaderContent = updateElementText("heading");
+
+// updateHeaderContent("hello shyam");
+
+// the rest operator puts the rest of some specific user-supplied values into a JavaScript array.
+//  But the spread syntax expands iterables into individual elements.
+
+// function curry(fun) {
+//   return function curryedFn(...arg) {
+//     if (arg.length >= fun.length) {
+//       return fun(...arg);
+//     } else {
+//       return function (...next) {
+//         return curryedFn(...arg, ...next);
+//       };
+//     }
+//   };
+// }
+
+// const sum = (a, b, c, d) => a + b + c + d;
+
+// const totalSum = curry(sum)
+// console.log(totalSum(3)(6)(5)(6));
+
+// question my own
+// function calc (x){
+//     return function add(y){ // we can add name if we need that function inside of it with out nameing we cant call it so we can name it if dont need it inside of it we can create anonymous function.
+//         return x + y;
+//     }
+// }
+// const res = calc(2);
+// console.log(res(4));
