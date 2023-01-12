@@ -1,0 +1,24 @@
+// throtlling
+function clickHandler() {
+  console.log("click ");
+}
+
+function sendResizeData() {
+  console.log("sended");
+}
+
+function throtlling(fun, limit) {
+  let flag = true;
+  return () => {
+    if (flag) {
+      fun();
+      flag = false;
+      setTimeout(() => {
+        flag = true;
+      }, limit);
+    }
+  };
+}
+
+const betterFunction = throtlling(sendResizeData, 500);
+window.addEventListener("resize", betterFunction);
