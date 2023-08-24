@@ -9,6 +9,9 @@ prototype:
  When we create objects from those classes prototype property added as a property of that created object.
 (this is called prototype inheritances).
 
+// prototype inheritence is not same oops inheritence there one class inheritence form anoter class those are both classes ( classical classes which is blueprint)
+// in prototype inheritence instences(objects)  ( mean objects are created from classes which is blueprint ) are access the methods from its parent class.
+
 Prototype Inheritance: 
 the prototype contains methods and variable that are accesible to all objects linked to that prototype.
 
@@ -31,8 +34,10 @@ When we create array then we access those prototype methods.
      this is how built-in objects like Arrays,Maps, Sets are actually implemented.
    
    2- ES6 CLASSES
+     this is not a classical classes.  
      Modern alternative to constuctor function
      Es6 not behave like classes in classical oops
+     behind the scene Es6 implemented constuctor function
    
    3- Objects.Create() 
      this is the easiest one to linking an objects to a prototype object.
