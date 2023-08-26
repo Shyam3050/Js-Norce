@@ -43,6 +43,6 @@ When we create array then we access those prototype methods.
      this is the easiest one to linking an objects to a prototype object.
      
  
-  4 pillar of javascript
+ ---- 4 pillar of javascript
    ABSTRACTION, ENCAPSULATION, INHERITANCE, POLYMORPHISIM    
      

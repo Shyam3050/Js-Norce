@@ -30,4 +30,8 @@
 // when we create constructor function .prototype object is created or constructor property is reference back to object
 
 // like in function constructor take an example Person
-// Person.prototype which is object so it self have prototype we define {} "{}" which object literal so object.prototype is inheritate
+// Person.prototype which is object so it self have prototype 
+when we define {}
+ "{}" which object literal so Object.prototype is inheritate
+
+Note:  // see the prototype inheitence img on folder.
