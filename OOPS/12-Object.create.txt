@@ -4,14 +4,14 @@ object.create();
 it have two parameter only like first one for prototype next one for property for object
 
 
-const Prototype = {
+const PersonPrototype = {
     calc: function(){
         console.log("this is calc");
     }
 }
-const obj = Object.create(Prototype);
+const obj = Object.create(PersonPrototype);
 // obj = {}
-like here obj.__proto__ === prototype // true
+like here obj.__proto__ === PersonPrototype // true
 for adding property we do like obj.name = "shyam" like this.
 
 /////for auto adding property we use like 

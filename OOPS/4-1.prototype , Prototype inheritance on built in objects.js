@@ -46,9 +46,9 @@ console.log(jonas.hasOwnProperty("species")); // false
 // console.log(arr.__proto__ === Array.prototype);
 // console.log(arr.__proto__.__proto__ === Object.prototype);
 
-const arr = [1, 2, 4, 3, 2, 3, 1, 4, 5, 4, 5];
-Array.prototype.unique = function () {
-  return [...new Set(this)];
-};
+// const arr = [1, 2, 4, 3, 2, 3, 1, 4, 5, 4, 5];
+// Array.prototype.unique = function () {
+//   return [...new Set(this)];
+// };
 
-console.log(arr.unique());
+// console.log(arr.unique());

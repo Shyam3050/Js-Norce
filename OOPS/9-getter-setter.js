@@ -19,20 +19,3 @@ const person = {
   
   // how setter and getter works in classes
   
-  class Details {
-    constructor(fullName, birthYear) {
-      this.fullName = fullName;
-      this.birthYear = birthYear;
-    }
-    get age() {
-      return 2024 - this.birthYear;
-    }
-    set fullNameing(name){
-       if(name.includes(" ")) this.king = name;
-    }
-  }
-  const shyam = new Details("shyam sundar", 2003);
-  // console.log(shyam.age);
-  Details.fullNameing = "raohto mjuhjlk";
-  console.log(shyam);
-  console.log(shyam.fullName);

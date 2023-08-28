@@ -18,7 +18,7 @@ const Student = function (firstName, birthYear, course) {
 
 //////////
 Student.prototype = Person.prototype;
-// here Student and Student instances prototypes are pointing to Person.prototype.
+// here Student.prototypes are pointing to Person.prototype.
 
 // it copy the Person.prototype Reference rather then copying the values
 ////////////

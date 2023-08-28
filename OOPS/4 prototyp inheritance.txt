@@ -22,8 +22,8 @@
 //  when we create object using object literal then behind scene built in Object constructor function called. __proto__ property is added newly created object.
 
 //// prototype chain
-// when we we look ceratin property or method in object it it can't there then we look prototype property which is inherite from constructor function where object was created, there also we can't find then it looks their prototype last top one was null .
 //  this Series of links betwen object prototype called prototype chain.
+// when we we look ceratin property or method in object it it can't there then we look prototype property which is inherite from constructor function where object was created, there also we can't find then it looks their prototype last top one was null .
 
 //////////////////////////////
 //// we know that every Funtion in js is object

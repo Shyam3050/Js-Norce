@@ -28,6 +28,6 @@ console.log(PersonCl.prototype);
 // this is also work just fine
 
 // Note:
-//  classes are not hoisted in js even class decleartion
+// classes are not hoisted in js even class decleartion
 // classes are special type of function
 // classes are activated in strict mode
